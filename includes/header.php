@@ -1,7 +1,7 @@
 <!-- the head section -->
 <head>
 <title>My PHP CRUD App</title>
-<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" type="text/css" href="css/demo.css">
 </head>
 
 <!-- the body section -->

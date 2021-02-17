@@ -1,0 +1,147 @@
+/*Variables*/
+/*Sidebar styles*/
+aside {
+  float: left;
+  width: 150px;
+}
+
+/*Header styles*/
+header {
+  margin: 0;
+  border-bottom: 2px solid black;
+}
+
+header h1 {
+  margin: 0;
+  padding: .5em 0;
+  color: black;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+nav ul li {
+  padding-bottom: 0.5em;
+}
+
+/*Footer styles*/
+footer {
+  clear: both;
+  margin-top: 1em;
+  border-top: 2px solid black;
+}
+
+footer p {
+  text-align: right;
+  font-size: 80%;
+  margin: 1em 0;
+}
+
+/*Font styles*/
+h1 {
+  font-size: 150%;
+  margin: 0;
+  padding: .5em 0 .25em;
+  color: #333;
+}
+
+h2 {
+  font-size: 120%;
+  margin: 0;
+  padding: .25em 0 .5em;
+  color: #333;
+}
+
+/*Body styles*/
+td, th {
+  border: 1px dashed black;
+  padding: .2em .5em .2em .5em;
+  vertical-align: top;
+  text-align: left;
+}
+
+body {
+  background-color: black;
+}
+
+.container {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 1000px;
+  margin: 0 auto;
+  background-color: white;
+  border: 1px solid black;
+  padding: .5em 2em;
+}
+
+section {
+  float: left;
+  width: 800PX;
+  padding-bottom: 1.5em;
+}
+
+ul {
+  margin: 0 0 1em 0;
+  padding: 0 0 0 2.5em;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: red;
+  font-weight: bold;
+}
+
+a:hover {
+  color: green;
+}
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+form {
+  margin: 0;
+}
+
+br {
+  clear: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.last_paragraph {
+  margin-bottom: 2em;
+}
+
+.margin_top_increase {
+  margin-top: 1em;
+}
+
+#add_record_form {
+  margin: .5em 0 1em;
+}
+
+#add_record_form label {
+  width: 6em;
+  padding-right: 1em;
+  padding-bottom: .5em;
+  float: left;
+}
+
+#add_record_form input {
+  float: left;
+}
+
+#add_record_form input[text] {
+  width: 15em;
+}
+/*# sourceMappingURL=demo.css.map */

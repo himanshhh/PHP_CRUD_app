@@ -1,0 +1,94 @@
+/*Body styles*/
+//colors
+$body_bg_color: black;
+$container_bg_color: white;
+$border:  black;
+$options_color: red;
+$options_color_hover: green;
+
+//fonts
+$font_0: Arial;
+$font_1: Helvetica;
+$font_2: sans-serif;
+
+//@extend-elements
+//td, th
+%same_style {
+	border: 1px dashed $border;
+	padding: .2em .5em .2em .5em;
+	vertical-align: top;
+	text-align: left;
+}
+
+
+body {
+	background-color: $body_bg_color;
+}
+.container {
+	font-family: $font_0, $font_1, $font_2;
+	width: 1000px;
+	margin: 0 auto;
+	background-color: $container_bg_color;
+	border: 1px solid $border;
+	padding: .5em 2em;
+}
+section {
+	float: left;
+	width: 800PX;
+	padding-bottom: 1.5em;
+}
+ul {
+	margin: 0 0 1em 0;
+	padding: 0 0 0 2.5em;
+}
+li {
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: $options_color;
+	font-weight: bold;
+	&:hover {
+		color: $options_color_hover;
+	}
+}
+table {
+	border: 1px solid $border;
+	border-collapse: collapse;
+}
+td {
+	@extend %same_style;
+}
+th {
+	@extend %same_style;
+}
+form {
+	margin: 0;
+}
+br {
+	clear: left;
+}
+.right {
+	text-align: right;
+}
+.last_paragraph {
+	margin-bottom: 2em;
+}
+.margin_top_increase {
+	margin-top: 1em;
+}
+#add_record_form {
+	margin: .5em 0 1em;
+	label {
+		width: 6em;
+		padding-right: 1em;
+		padding-bottom: .5em;
+		float: left;
+	}
+	input {
+		float: left;
+	}
+	input[text] {
+		width: 15em;
+	}
+}
