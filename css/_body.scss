@@ -1,11 +1,4 @@
 /*Body styles*/
-//colors
-$body_bg_color: black;
-$container_bg_color: white;
-$border:  black;
-$options_color: red;
-$options_color_hover: green;
-
 //fonts
 $font_0: Arial;
 $font_1: Helvetica;
@@ -77,7 +70,7 @@ br {
 .margin_top_increase {
 	margin-top: 1em;
 }
-#add_record_form {
+#add_dish_form {
 	margin: .5em 0 1em;
 	label {
 		width: 6em;

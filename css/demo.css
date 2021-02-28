@@ -8,13 +8,13 @@ aside {
 /*Header styles*/
 header {
   margin: 0;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid green;
 }
 
 header h1 {
   margin: 0;
   padding: .5em 0;
-  color: black;
+  color: green;
 }
 
 nav ul {
@@ -64,7 +64,7 @@ td, th {
 }
 
 body {
-  background-color: black;
+  background-color: red;
 }
 
 .container {
@@ -98,7 +98,7 @@ a {
 }
 
 a:hover {
-  color: green;
+  color: blue;
 }
 
 table {
@@ -126,22 +126,22 @@ br {
   margin-top: 1em;
 }
 
-#add_record_form {
+#add_dish_form {
   margin: .5em 0 1em;
 }
 
-#add_record_form label {
+#add_dish_form label {
   width: 6em;
   padding-right: 1em;
   padding-bottom: .5em;
   float: left;
 }
 
-#add_record_form input {
+#add_dish_form input {
   float: left;
 }
 
-#add_record_form input[text] {
+#add_dish_form input[text] {
   width: 15em;
 }
 /*# sourceMappingURL=demo.css.map */

@@ -1,11 +1,8 @@
 /*Footer styles*/
-//colors
-$black:  black;
-
 footer {
 	clear: both;
 	margin-top: 1em;
-	border-top: 2px solid $black;
+	border-top: 2px solid $footer_border;
 	p {
 		text-align: right;
 		font-size: 80%;
