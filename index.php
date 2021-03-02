@@ -75,7 +75,7 @@ include('includes/header.php');
 <tr>
 <td><img src="image_uploads/<?php echo $dish['image']; ?>" width="100px" height="100px" /></td>
 <td><?php echo $dish['name']; ?></td>
-<td><?php echo $dish['Description']; ?></td>
+<td><?php echo $dish['description']; ?></td>
 <td class="right"><?php echo $dish['price']; ?></td>
 <td><form action="delete_dish.php" method="post"
 id="delete_dish_form">
