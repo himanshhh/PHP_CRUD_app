@@ -8,13 +8,14 @@ aside {
 /*Header styles*/
 header {
   margin: 0;
-  border-bottom: 2px solid green;
+  border-bottom: 2px solid #14018a;
 }
 
 header h1 {
   margin: 0;
   padding: .5em 0;
-  color: green;
+  color: #14018a;
+  font-family: 'Akaya Telivigala', cursive;
 }
 
 nav ul {
@@ -64,16 +65,21 @@ td, th {
 }
 
 body {
-  background-color: red;
+  background-color: black;
 }
 
 .container {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Stick, sans-serif;
   width: 1000px;
   margin: 0 auto;
-  background-color: white;
+  background-color: #b3d9fc;
   border: 1px solid black;
   padding: .5em 2em;
+}
+
+h1 {
+  color: #01088f;
+  font-family: 'Noto Sans SC', sans-serif;
 }
 
 section {
@@ -101,9 +107,19 @@ a:hover {
   color: blue;
 }
 
+input {
+  background-color: black;
+  color: white;
+  font-family: Stick, sans-serif;
+}
+
 table {
   border: 1px solid black;
   border-collapse: collapse;
+}
+
+th {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 form {
@@ -130,18 +146,37 @@ br {
   margin: .5em 0 1em;
 }
 
+#add_dish_form span {
+  position: relative;
+  left: 30px;
+}
+
 #add_dish_form label {
   width: 6em;
   padding-right: 1em;
   padding-bottom: .5em;
   float: left;
+  font-family: 'Noto Sans SC', sans-serif;
+}
+
+#add_dish_form select, #add_dish_form textarea {
+  font-family: 'Noto Sans SC', sans-serif;
+  background-color: black;
+  color: white;
 }
 
 #add_dish_form input {
   float: left;
+  font-family: 'Noto Sans SC', sans-serif;
 }
 
 #add_dish_form input[text] {
   width: 15em;
+}
+
+#add_dish_form strong {
+  color: red;
+  position: relative;
+  left: 60px;
 }
 /*# sourceMappingURL=demo.css.map */

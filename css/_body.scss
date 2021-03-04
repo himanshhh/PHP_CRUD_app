@@ -1,7 +1,7 @@
 /*Body styles*/
 //fonts
 $font_0: Arial;
-$font_1: Helvetica;
+$font_1: Stick;
 $font_2: sans-serif;
 
 //@extend-elements
@@ -13,17 +13,22 @@ $font_2: sans-serif;
 	text-align: left;
 }
 
-
 body {
 	background-color: $body_bg_color;
 }
 .container {
-	font-family: $font_0, $font_1, $font_2;
+	font-family: $font_1, $font_2;
 	width: 1000px;
 	margin: 0 auto;
 	background-color: $container_bg_color;
 	border: 1px solid $border;
 	padding: .5em 2em;
+}
+h1
+{
+	color: #01088f;
+	font-family: 'Noto Sans SC', sans-serif;
+
 }
 section {
 	float: left;
@@ -45,15 +50,24 @@ a {
 		color: $options_color_hover;
 	}
 }
+input
+{
+	background-color: black;
+	color: white;
+	font-family: $font_1,$font_2;
+}
 table {
 	border: 1px solid $border;
 	border-collapse: collapse;
+	
 }
 td {
 	@extend %same_style;
+	
 }
 th {
 	@extend %same_style;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 form {
 	margin: 0;
@@ -71,17 +85,37 @@ br {
 	margin-top: 1em;
 }
 #add_dish_form {
+
 	margin: .5em 0 1em;
+
+	span{
+position: relative;
+left: 30px;
+	}
+	
 	label {
 		width: 6em;
 		padding-right: 1em;
 		padding-bottom: .5em;
 		float: left;
+		font-family: 'Noto Sans SC', sans-serif;
+	}
+	select,textarea{
+		font-family: 'Noto Sans SC', sans-serif;
+		background-color: black;
+		color: white;
 	}
 	input {
 		float: left;
+		font-family: 'Noto Sans SC', sans-serif;
 	}
 	input[text] {
 		width: 15em;
 	}
+	strong{
+		color: red;
+		position: relative;
+		left: 60px;
+	}
+
 }

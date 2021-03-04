@@ -11,12 +11,19 @@ $statement->execute();
 $dishes = $statement->fetch(PDO::FETCH_ASSOC);
 $statement->closeCursor();
 ?>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet">
+
+<script src="validation.js"></script>
+
+
 <!-- the head section -->
  <div class="container">
 <?php
 include('includes/header.php');
 ?>
-        <h1>Edit Product</h1>
+        <h1>Edit Dish</h1>
         <form action="edit_dish.php" method="post" enctype="multipart/form-data"
               id="add_dish_form">
             <input type="hidden" name="original_image" value="<?php echo $dishes['image']; ?>" />
@@ -28,19 +35,21 @@ include('includes/header.php');
                    value="<?php echo $dishes['categoryID']; ?>">
             <br>
 
-            <label>Name:</label>
-            <input type="input" name="name"
-                   value="<?php echo $dishes['name']; ?>">
+            <label>*Name:</label>
+            <input type="input" name="name" id="name" onBlur="dish_validation();"
+                   value="<?php echo $dishes['name']; ?>" required>
+                   <span id="name_err"></span>
             <br>
 
             <label>Description:</label>
-            <input type="input" name="description"
-                   value="<?php echo $dishes['description']; ?>">
+            <textarea name="description" rows="4"> <?php echo $dishes['description']; ?> </textarea>
+            <br>
             <br>
 
-            <label>List Price:</label>
-            <input type="input" name="price"
-                   value="<?php echo $dishes['price']; ?>">
+            <label>*List Price:</label>
+            <input type="input" name="price" id="price" onBlur="price_validation();"
+                   value="<?php echo $dishes['price']; ?>" required pattern="^(?:[3-9]|[1-4][0-9])$">
+                   <span id="price_err"></span>
             <br>
 
             <label>Image:</label>

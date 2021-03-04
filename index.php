@@ -38,6 +38,13 @@ $statement3->execute();
 $dishes = $statement3->fetchAll();
 $statement3->closeCursor();
 ?>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Stick&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Montserrat:wght@800&family=Stick&display=swap" rel="stylesheet">
+
 <div class="container">
 <?php
 include('includes/header.php');
@@ -64,12 +71,12 @@ include('includes/header.php');
 <h2><?php echo $category_name; ?></h2>
 <table>
 <tr>
-<th>Image</th>
-<th>Name</th>
-<th>Description</th>
-<th>Price</th>
-<th>Delete</th>
-<th>Edit</th>
+<th>IMAGE</th>
+<th>NAME</th>
+<th>DESCRIPTION</th>
+<th>PRICE</th>
+<th>DELETE</th>
+<th>EDIT</th>
 </tr>
 <?php foreach ($dishes as $dish) : ?>
 <tr>

@@ -8,6 +8,12 @@ $statement->execute();
 $categories = $statement->fetchAll();
 $statement->closeCursor();
 ?>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC&display=swap" rel="stylesheet">
+
+<script src="validation.js"></script>
+
 <!-- the head section -->
  <div class="container">
 <?php
@@ -26,16 +32,19 @@ include('includes/header.php');
             <?php endforeach; ?>
             </select>
             <br>
-            <label>Name:</label>
-            <input type="input" name="name" placeholder="yo" required>
+            <label>*Name:</label>
+            <input type="input" name="name" id="name" onBlur="dish_validation();" placeholder="Enter Dish name here" required/>
+            <span id="name_err"></span>
             <br>
 
             <label>Description:</label>
-            <input type="input" name="description">
+            <textarea name="description" rows="4"> </textarea>
+            <br>
             <br>
 
-            <label>List Price:</label>
-            <input type="input" name="price">
+            <label>*List Price:</label>
+            <input type="input" name="price" id="price" onBlur="price_validation();" placeholder="Enter Dish price here" required pattern="^(?:[3-9]|[1-4][0-9])$">
+            <span id="price_err"></span>
             <br>        
             
             <label>Image:</label>
