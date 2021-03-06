@@ -1,7 +1,14 @@
 --
+-- Database: `restaurant`
+--
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `categories`
 --
 
+DROP TABLE IF EXISTS `categories`;
 CREATE TABLE `categories` (
   `categoryID` int(11) NOT NULL,
   `categoryName` varchar(255) NOT NULL
@@ -12,56 +19,71 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`categoryID`, `categoryName`) VALUES
-(1, 'Category 1'),
-(2, 'Category 2'),
-(3, 'Category 3');
+(1, 'Starters'),
+(2, 'Main Course'),
+(3, 'Dessert'),
+(4, 'Drinks');
+
+-- --------------------------------------------------------
 
 --
--- Table structure for table `records`
+-- Table structure for table `dishes`
 --
 
-CREATE TABLE `records` (
-  `recordID` int(11) NOT NULL,
+DROP TABLE IF EXISTS `dishes`;
+CREATE TABLE `dishes` (
+  `dishID` int(11) NOT NULL,
   `categoryID` int(11) NOT NULL,
   `name` varchar(255) NOT NULL,
+  `description` varchar(255) NOT NULL,
   `price` decimal(10,2) NOT NULL,
   `image` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `records`
+-- Dumping data for table `dishes`
 --
 
-INSERT INTO `records` (`recordID`, `categoryID`, `name`, `price`, `image`) VALUES
-(1, 1, 'Some text', '12.00', '644471.jpg'),
-(2, 1, 'Some text', '15.00', '233012.jpg'),
-(3, 1, 'Some text', '18.00', '329484.jpg'),
-(4, 1, 'Some text', '10.00', '644055.jpg'),
-(5, 2, 'Some text', '16.00', '373465.jpg'),
-(6, 2, 'Some text', '19.00', '373989.jpg'),
-(7, 2, 'Some text', '12.00', '374104.jpg'),
-(8, 2, 'Some text', '10.00', '4733.jpg'),
-(9, 2, 'Some text', '15.00', '834551.jpg'),
-(10, 3, 'Some text', '13.00', '908783.jpg'),
-(11, 3, 'Some text', '17.00', '835545.jpg'),
-(12, 3, 'Some text', '19.00', '119273.jpg');
+INSERT INTO `dishes` (`dishID`, `categoryID`, `name`, `description`, `price`, `image`) VALUES
+(1, 1, 'Samosa', '                A samosa is a fried or baked pastry with a savory filling, such as spiced potatoes, onions, peas, cheese, beef and other meats, or lentils. It may take different forms, including triangular, cone, or half-moon shapes. ', '4.00', '790868.jpg'),
+(2, 1, 'Tandoori Chicken', 'Tandoori chicken is a chicken dish prepared by roasting chicken marinated in yogurt and spices in a tandoor, a cylindrical clay oven. The dish originated from the Indian subcontinent and is popular in many other parts of the world.', '5.00', '474269.jpg'),
+(3, 1, 'Momos', 'Momo is a type of East and South Asian steamed filled dumpling. It is popular across a wider region of the Indian subcontinent.', '7.00', '351638.jpg'),
+(5, 2, 'Butter Chicken', 'Butter chicken curry or murgh makhani is a curry of chicken in a spiced tomato, butter and cream sauce. It originated in India as a curry.', '12.00', '802237.jpg'),
+(6, 2, 'Masala Dosa', 'Masala dosai or masale dose or masaldosa is a variation of the popular South Indian dosa, which has its origins in Tuluva Mangalorean cuisine of Karnataka. It is made from rice, lentils, potato, and curry leaves, and served with chutneys and sambar.', '9.00', '886315.jpg'),
+(7, 2, 'Chole Bhature', 'Chole bhature is a food dish originating from northern India. However, in India, Delhi Chole Bhature is very popular, it is a combination of chana masala and bhatura/Puri, a fried bread made from maida. The origin of dish lies in Eastern Uttar Pradesh.', '12.00', '948558.jpg'),
+(8, 2, 'Shahi Paneer', 'Shahi paneer is a preparation of paneer, native to the Indian subcontinent, consisting of a thick gravy of cream, tomatoes and Indian spices.', '13.00', '376626.jpg'),
+(9, 2, 'Pav Bhaji', 'Pav bhaji is a fast food dish from India consisting of a thick vegetable curry served with a soft bread roll. Vegetables in the curry may include potatoes, onions, chillies, peas, bell peppers, and tomatoes. Its origins are in the state of Maharashtra.', '14.00', '660533.jpg'),
+(10, 3, 'Gulab Jamun', 'Gulab jamun is a milk-solid-based sweet from the Indian subcontinent, and a type of mithai, popular in India, Nepal, Pakistan, the Maldives, and Bangladesh, as well as Myanmar.', '8.00', '892180.jpg'),
+(11, 3, 'Kulfi', 'Kulfi or Qulfi is a frozen dairy dessert originating in the Indian subcontinent in the 16th century. It is often described as \"traditional Indian ice cream\".', '9.00', '268963.jpg'),
+(12, 3, 'Jalebi', 'Jalebi, also known as Jilapi, zulbia, mushabak and zalabia, is an Indian sweet snack. It is made by deep-frying maida flour batter in pretzel or circular shapes, which are then soaked in sugar syrup. This dessert can be served warm or cold.', '6.00', '66822.jpg'),
+(13, 1, 'Paneer Tikka', ' Paneer tikka is an Indian dish made from chunks of paneer marinated in spices and grilled in a tandoor. It is a vegetarian alternative to chicken tikka and other meat dishes. It is a popular dish that is widely available in India.', '9.00', '50399.jpg'),
+(15, 3, 'Falooda', 'Falooda or rabri faluda is an Indian version of a cold dessert made with noodles. Traditionally it is made by mixing rose syrup, vermicelli, and sweet basil seeds with milk, often served with ice cream.', '5.00', '63946.jpg'),
+(16, 4, 'Shikanji', 'Shikanji is a lemon-based drink originating in the northern part of India. Alternative names include shikanjvi, shikanjbi and shikanjbeen. Shikanji is distinct from lemonade, and often contains other ingredients such as salt, saffron and cumin.', '4.00', '450432.jpg'),
+(17, 4, 'Lassi', 'Lassi is a popular traditional dahi-based drink or regional name for buttermilk in Jammu, Haryana and Punjab. It is a blend of yogurt, water, spices and sometimes fruit. Namkeen lassi is similar to doogh, while sweet and mango lassis are like milkshakes', '5.00', '842924.jpg'),
+(18, 4, 'Jal Jeera', 'Jal-jeera, or jaljira, is an Indian beverage. In Hindi, \"jal\" means water and \"jeera\" means cumin. The beverage form is essentially lemonade and jaljira powder, and is a popular summer drink in India.', '4.00', '35246.jpg'),
+(19, 4, 'Rooh Afza', 'Rooh Afza is a concentrated squash. It was formulated in 1906 in Ghaziabad, India by Naqi Ali Shah, and launched from Old Delhi, India. It is best served chilled.', '7.00', '990636.jpg');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `records`
+-- Indexes for table `dishes`
 --
-ALTER TABLE `records`
-  ADD PRIMARY KEY (`recordID`);
+ALTER TABLE `dishes`
+  ADD PRIMARY KEY (`dishID`);
 
 --
 -- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT for table `records`
+-- AUTO_INCREMENT for table `dishes`
 --
-ALTER TABLE `records`
-  MODIFY `recordID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+ALTER TABLE `dishes`
+  MODIFY `dishID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
