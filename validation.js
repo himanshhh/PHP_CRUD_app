@@ -28,7 +28,7 @@
 
     if(!dish_value.match(numbers))
     {
-    document.getElementById('price_err').innerHTML = '!PRICE MUST BE BETWEEN 3 & 49 EUROS ONLY!';
+    document.getElementById('price_err').innerHTML = '!PRICE MUST BE BETWEEN 3 & 49 EUROS ONLY! (No Decimals)';
     dish_price.focus();
     document.getElementById('price_err').style.color = "black";
     document.getElementById('price_err').style.backgroundColor = "red";

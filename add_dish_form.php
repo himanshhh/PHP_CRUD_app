@@ -33,7 +33,7 @@ include('includes/header.php');
             </select>
             <br>
             <label>*Name:</label>
-            <input type="input" name="name" id="name" onBlur="dish_validation();" placeholder="Enter Dish name here" required/>
+            <input type="input" name="name" id="name" onBlur="dish_validation();" placeholder="Enter Dish name here" required pattern="^[a-zA-Z]+$">
             <span id="name_err"></span>
             <br>
 

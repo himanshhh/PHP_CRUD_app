@@ -37,7 +37,7 @@ include('includes/header.php');
 
             <label>*Name:</label>
             <input type="input" name="name" id="name" onBlur="dish_validation();"
-                   value="<?php echo $dishes['name']; ?>" required>
+                   value="<?php echo $dishes['name']; ?>" required pattern="^[a-zA-Z]+$">
                    <span id="name_err"></span>
             <br>
 
@@ -51,6 +51,7 @@ include('includes/header.php');
                    value="<?php echo $dishes['price']; ?>" required pattern="^(?:[3-9]|[1-4][0-9])$">
                    <span id="price_err"></span>
             <br>
+            
 
             <label>Image:</label>
             <input type="file" name="image" accept="image/*" />
