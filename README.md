@@ -2,7 +2,7 @@ Welcome to the **Desi Restaurant** CRUD Application.
 
 This is a PHP Website Application, which connects to a MySQL Database.
 
-####In order to run this application, Install the following Programs:
+#### In order to run this application, Install the following Programs:
 
 [XAMPP](https://www.apachefriends.org/download.html "Download XAMPP")
 
