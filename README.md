@@ -22,7 +22,7 @@ VS Code
 - Within the bottom blue bar in VSCode, Click "Open In Browser". 
 - Your Website CRUD Application will then open and display the Website Home Page. 
 
-**TIP:** 
+### TIP: 
 ____
 If you cannot find the 'Open In Browser' option, you might need to add browser extension in VS Code. Follow the following link for help: 
 [How to add extensions in VS Code](https://code.visualstudio.com/docs/introvideos/extend "Extensions in VS Code")
