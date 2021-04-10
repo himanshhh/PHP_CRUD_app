@@ -44,8 +44,29 @@ if(isset($_POST['login'])){
     if($user === false){
         //Could not find a user with that username!
         //PS: You might want to handle this error in a more user-friendly manner!
-        die('Incorrect username / password combination!');
-    } else{
+        die('Sorry, this user does not exist! Please try again');
+    } else if($user === 'admin'){
+
+        $validPassword = password_verify($passwordAttempt, $user['password']);
+        
+        //If $validPassword is TRUE, the login has been successful.
+        if($validPassword){
+            
+            //Provide the user with a login session.
+            $_SESSION['admin'] = $user['id'];
+            $_SESSION['logged_in'] = time();
+            
+            //Redirect to our protected page, which we called home.php
+            header('Location: manage_dish.php');
+            exit;
+            
+        } else{
+            //$validPassword was FALSE. Passwords do not match.
+            die('Incorrect password for admin!');
+        }
+        
+    }
+    else{
         //User account found. Check to see if the given password matches the
         //password hash that we stored in our users table.
         
@@ -60,13 +81,14 @@ if(isset($_POST['login'])){
             $_SESSION['logged_in'] = time();
             
             //Redirect to our protected page, which we called home.php
-            header('Location: index.php');
+            header('Location: manage_dish.php');
             exit;
             
         } else{
             //$validPassword was FALSE. Passwords do not match.
-            die('Incorrect username / password combination!');
+            die('Incorrect password!');
         }
+
     }
     
 }
