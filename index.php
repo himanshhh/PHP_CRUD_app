@@ -75,8 +75,7 @@ include('includes/header.php');
 <th>NAME</th>
 <th>DESCRIPTION</th>
 <th>PRICE</th>
-<th>DELETE</th>
-<th>EDIT</th>
+
 </tr>
 <?php foreach ($dishes as $dish) : ?>
 <tr>
@@ -84,22 +83,7 @@ include('includes/header.php');
 <td><?php echo $dish['name']; ?></td>
 <td><?php echo $dish['description']; ?></td>
 <td class="right"><?php echo $dish['price']; ?></td>
-<td><form action="delete_dish.php" method="post"
-id="delete_dish_form">
-<input type="hidden" name="dishID"
-value="<?php echo $dish['dishID']; ?>">
-<input type="hidden" name="category_id"
-value="<?php echo $dish['categoryID']; ?>">
-<input type="submit" value="Delete">
-</form></td>
-<td><form action="edit_dish_form.php" method="post"
-id="delete_dish_form">
-<input type="hidden" name="dishID"
-value="<?php echo $dish['dishID']; ?>">
-<input type="hidden" name="category_id"
-value="<?php echo $dish['categoryID']; ?>">
-<input type="submit" value="Edit">
-</form></td>
+</form>
 </tr>
 <?php endforeach; ?>
 </table>

@@ -16,7 +16,11 @@ require 'libary-folder/password.php';
  * Include our MySQL connection.
  */
 require 'login_connect.php';
+?>
 
+<div class="container">
+<?php
+include('includes/header.php');
 
 //If the POST var "register" exists (our submit button), then we can
 //assume that the user has submitted the registration form.
@@ -73,18 +77,15 @@ if(isset($_POST['register'])){
         //What you do here is up to you!
         echo 'Thank you for registering with our website.';
     }
-    
 }
+?>
 
-?>
-<div class="container">
-<?php
-include('includes/header.php');
-?>
         <h1>Register</h1>
         <form action="register.php" method="post">
             <label for="username">Username</label>
             <input type="text" id="username" name="username"><br>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email"><br>
             <label for="password">Password</label>
             <input type="text" id="password" name="password"><br>
             <input type="submit" name="register" value="Register"></button>
