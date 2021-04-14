@@ -45,7 +45,7 @@ if(isset($_POST['login'])){
         //Could not find a user with that username!
         //PS: You might want to handle this error in a more user-friendly manner!
         die('Sorry, this user does not exist! Please try again');
-    } else if($user === 'admin'){
+    } else if($user['username'] === 'admin'){
 
         $validPassword = password_verify($passwordAttempt, $user['password']);
         
