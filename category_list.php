@@ -19,7 +19,7 @@ if(!isset($_SESSION['admin']) || !isset($_SESSION['logged_in'])){
  * Print out something that only logged in users can see.
  */
 
-echo 'Congratulations! You are logged in!';
+echo 'Hello Admin! You are logged in!';
 
     require_once('database.php');
 

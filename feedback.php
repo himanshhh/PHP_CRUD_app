@@ -29,6 +29,7 @@ include('includes/header.php');
         </tr>
         <?php endforeach; ?>
     </table>
+    
     <br>
 
     <h2>Give us your Feedback!</h2>
@@ -43,6 +44,8 @@ include('includes/header.php');
         <input type="input" name="name">
         <input id="add_feedback_button" type="submit" value="Add">
     </form>
+
+    <a id="display_user" href="display_user.php">Display registered users</a>
 
     <?php
 include('includes/footer.php');
