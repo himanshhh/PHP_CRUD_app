@@ -18,20 +18,31 @@ include('includes/header.php');
     <h1>Feedback List</h1>
     <table>
         <tr>
-        <th>&nbsp;</th>
-            <th>Name</th>
+            <th>Comment</th>
             <th>User</th>
         </tr>
         <?php foreach ($feedbacks as $feedback) : ?>
         <tr>
 
-        <td><?php echo $feedback['feedbackID']; ?></td>
             <td><?php echo $feedback['comment']; ?></td>
             <td><?php echo $feedback['username']; ?></td>
         </tr>
         <?php endforeach; ?>
     </table>
     <br>
+
+    <h2>Give us your Feedback!</h2>
+    <form action="add_feedback.php" method="post"
+          id="add_feedback_form">
+
+        <label>Comment:</label>
+        <input type="input" name="comment">
+        <br>
+
+        <label>Name:</label>
+        <input type="input" name="name">
+        <input id="add_feedback_button" type="submit" value="Add">
+    </form>
 
     <?php
 include('includes/footer.php');

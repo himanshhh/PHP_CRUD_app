@@ -81,7 +81,7 @@ if(isset($_POST['login'])){
             $_SESSION['logged_in'] = time();
             
             //Redirect to our protected page, which we called home.php
-            header('Location: manage_dish.php');
+            header('Location: add_dish_form.php');
             exit;
             
         } else{
