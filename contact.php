@@ -25,7 +25,7 @@ include('includes/header.php');
 </p>
 <p>
 <label for='message'>Message:</label> <br>
-<textarea name="message"></textarea>
+<textarea id="msg" name="message"></textarea>
 </p>
 <input type="submit" value="Submit"><br>
 </form>

@@ -120,3 +120,67 @@ left: 30px;
 
 }
 
+#username{
+	position: relative;
+	left: 330px;
+}
+
+#password{
+	position: relative;
+	left: 332px;
+	top: 10px;
+}
+
+#email{
+	position: relative;
+	top: 5px;
+	left: 330px;
+}
+
+#email1{
+	position: relative;
+	left: 363px;
+	top: 5px;
+}
+
+#login{
+	position: relative;
+	top: 15px;
+	left: 460px;
+}
+
+#userr{
+	position: relative;
+	left: 26px;
+}
+#add_feedback_button{
+	position: relative;
+	left: 26px;
+}
+
+#display_user{
+	position: relative;
+	top: 6px;
+}
+#msg{
+	background-color: black;
+	color: blanchedalmond;
+}
+
+#users{
+	text-align: center;
+}
+
+#usertable{
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+
+	td{
+		text-align: center;
+	}
+	th{
+		text-align: center;
+	}
+}
+

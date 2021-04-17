@@ -1,25 +1,25 @@
 <?php
 
-/**
- * Start the session.
- */
-session_start();
+// /**
+//  * Start the session.
+//  */
+// session_start();
 
-/**
- * Check if the user is logged in.
- */
-if(!isset($_SESSION['admin']) || !isset($_SESSION['logged_in'])){
-    //User not logged in. Redirect them back to the login.php page.
-    header('Location: login.php');
-    exit;
-}
+// /**
+//  * Check if the user is logged in.
+//  */
+// if(!isset($_SESSION['admin']) || !isset($_SESSION['logged_in'])){
+//     //User not logged in. Redirect them back to the login.php page.
+//     header('Location: login.php');
+//     exit;
+// }
 
 
-/**
- * Print out something that only logged in users can see.
- */
+// /**
+//  * Print out something that only logged in users can see.
+//  */
 
-echo 'Hello Admin! You are logged in!';
+// echo 'Hello Admin! You are logged in!';
 
     require_once('database.php');
 
@@ -67,6 +67,7 @@ include('includes/header.php');
         <input id="add_category_button" type="submit" value="Add">
     </form>
 
+    <p><a href="index.php">View Homepage</a></p>
     <?php
 include('includes/footer.php');
 ?>

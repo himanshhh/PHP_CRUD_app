@@ -36,12 +36,12 @@ include('includes/header.php');
     <form action="add_feedback.php" method="post"
           id="add_feedback_form">
 
-        <label>Comment:</label>
-        <input type="input" name="comment">
+        <label id="comment">Comment:</label>
+        <input id="comment" type="input" name="comment">
         <br>
 
-        <label>Name:</label>
-        <input type="input" name="name">
+        <label >Name:</label>
+        <input id="userr" type="input" name="name">
         <input id="add_feedback_button" type="submit" value="Add">
     </form>
 

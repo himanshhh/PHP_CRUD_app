@@ -87,8 +87,7 @@ include('includes/header.php');
 </tr>
 <?php endforeach; ?>
 </table>
-<p><a href="add_dish_form.php">Add Dish</a></p>
-<p><a href="category_list.php">Manage Categories</a></p>
+
 </section>
 <?php
 include('includes/footer.php');

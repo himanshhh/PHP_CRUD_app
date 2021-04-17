@@ -100,11 +100,11 @@ include('includes/header.php');
 ?>
         <h1>Login</h1>
         <form action="login.php" method="post">
-            <label for="username">Username</label>
+            <label id="username" for="username">Username</label>
             <input type="text" id="username" name="username"><br>
-            <label for="password">Password</label>
-            <input type="text" id="password" name="password"><br>
-            <input type="submit" name="login" value="Login">
+            <label id="password" for="password">Password</label>
+            <input type="password" id="password" name="password"><br>
+            <input id="login" type="submit" name="login" value="Login">
         </form>
         <?php
 include('includes/footer.php');

@@ -9,14 +9,14 @@
 <!-- the body section -->
 <body>
 <header><h1>DESI RESTAURANT</h1>
-<div class="topnav">
-  <a class="active" href="index.php">Home</a>
-  <a href="add_dish_form.php">Add Dish</a>
-  <a href="manage_dish.php">Manage Dish</a>
-  <a href="category_list.php">Manage Categories</a>
-  <a href="feedback.php">Feedbacks</a>
-  <a href="contact.php">Contact Us</a>
-  <a href="register.php">Register</a>
-  <a href="login.php">Login</a>
-  <a href="logout.php">Logout</a>
+<div class="topnav"> 
+  <a class="active" href="index.php">Home</a> &emsp;    
+  <a href="add_dish_form.php">Add Dish</a>   &emsp; 
+  <a href="manage_dish.php">Manage Dish</a>&emsp; 
+  <a href="category_list.php">Manage Categories</a>&emsp; 
+  <a href="feedback.php">Feedbacks</a>&emsp; 
+  <a href="contact.php">Contact Us </a> &emsp; 
+  <a href="register.php">Register</a>&emsp; 
+  <a href="login.php">Login</a>&emsp; 
+  <a href="logout.php">Logout</a>&emsp; 
 </div></header>
