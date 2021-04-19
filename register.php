@@ -54,7 +54,7 @@ if(isset($_POST['register'])){
     //I'm just going to kill the script completely, as error handling is outside
     //the scope of this tutorial.
     if($row['num'] > 0){
-        die('That username already exists!');
+        die("<p style='color:red;'>".'That username already exists!'."</p>");
     }
     
     //Hash the password as we do NOT want to store our passwords in plain text.
@@ -75,7 +75,7 @@ if(isset($_POST['register'])){
     //If the signup process is successful.
     if($result){
         //What you do here is up to you!
-        echo 'Thank you for registering with our website.';
+        echo "<p style='color:green;'>".'Thank you for registering with our website.'."</p>";
     }
 }
 ?>
