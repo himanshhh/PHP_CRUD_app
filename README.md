@@ -1,33 +1,67 @@
-Welcome to the **Desi Restaurant** CRUD Application.
+# 🍽️ Desi Restaurant – PHP CRUD Application
 
-This is a PHP Website Application, which connects to a MySQL Database.
+Welcome to the **Desi Restaurant** CRUD Application — a lightweight restaurant management system built using PHP and MySQL.
 
-#### In order to run this application, Install the following Programs:
+This application provides full **Create, Read, Update, Delete (CRUD)** functionality and is styled with modern **CSS/SCSS** and enhanced with **JavaScript** interactivity.
 
-[XAMPP](https://www.apachefriends.org/download.html "Download XAMPP")
+---
 
-[VSCode](https://code.visualstudio.com/download "Download VSCode") or any other IDE
+## ⚙️ Tools & Technologies Used
 
+| Category           | Tools / Technologies                         |
+|--------------------|----------------------------------------------|
+| Language           | PHP, JavaScript                              |
+| Styling            | CSS, SCSS                                    |
+| Database           | MySQL                                        |
+| Server Environment | XAMPP (Apache + MySQL)                       |
+| IDE                | VS Code or any preferred code editor         |
+| Browser Utility    | Live Server / Open in Browser Extension      |
 
-XAMPP & MySQL Configuration Setup
---------------------------------------------------------------------------------------------------------------------------------------
-- Start XAMPP 
-- Start the "Apache" and "MySQL" Modules. 
-- Open MySQL by clicking the "Admin" button from MySQL.
-- Within MySQL, Import the following SQL Script - Copy the contents of the starter-for-your-database.txt, and paste into the SQL Page. Click GO
+---
 
-VS Code
---------------------------------------------------------------------------------------------------------------------------------------
-- Open the Folder, Click the index.php file.
-- Within the bottom blue bar in VSCode, Click "Open In Browser". 
-- Your Website CRUD Application will then open and display the Website Home Page. 
+## 🛠️ Installation & Setup
 
-### TIP: 
-____
-If you cannot find the 'Open In Browser' option, you might need to add browser extension in VS Code. Follow the following link for help: 
+### ✅ Prerequisites
 
-[How to add extensions in VS Code](https://code.visualstudio.com/docs/introvideos/extend "Extensions in VS Code")
+Make sure the following tools are installed:
 
->Author:   Himansh Arora
+- ✅ [XAMPP](https://www.apachefriends.org/download.html)
+- ✅ [VS Code](https://code.visualstudio.com/download) (or any IDE)
 
->e-mail:   d00233455@student.dkit.ie
+---
+
+### 🚀 XAMPP & MySQL Configuration
+
+1. Launch **XAMPP**.
+2. Start the **Apache** and **MySQL** modules.
+3. Click **Admin** next to MySQL to open phpMyAdmin.
+4. In phpMyAdmin:
+   - Create a new database (or use an existing one).
+   - Go to the **SQL** tab.
+   - Copy the SQL script from `starter-for-your-database.txt`, paste it, and click **GO**.
+
+---
+
+### 🧑‍💻 Running the Application via VS Code
+
+1. Open the project folder in **VS Code**.
+2. Locate and open the `index.php` file.
+3. On the blue bar at the bottom of VS Code, click **"Open In Browser"**.
+4. The CRUD application will launch in your default web browser.
+
+---
+
+### 💡 TIP: Can’t see "Open In Browser"?
+
+You may need to install the **Live Server** or **Open In Browser** extension in VS Code.
+
+🔗 [How to Add Extensions in VS Code](https://code.visualstudio.com/docs/introvideos/extend)
+
+---
+
+## 👤 Author
+
+- **Name**: Himansh Arora  
+- **Email**: d00233455@student.dkit.ie
+
+---
